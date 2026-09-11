@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Opportunities — NEXT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-page="opportunities">
+
+<header class="nav-wrap">
+
+  <nav class="nav container">
+
+    <a class="brand" href="index.html">
+      <span class="brand-symbol">✦</span>
+      NEXT
+    </a>
+
+    <div class="nav-links" id="navLinks">
+
+      <a href="index.html">Home</a>
+
+      <a class="active" href="opportunities.html">
+        Opportunities
+      </a>
+
+      <a href="career.html">
+        Career
+      </a>
+
+      <a href="problem.html">
+        Problem &amp; Solution
+      </a>
+
+    </div>
+
+    <div class="nav-actions">
+
+      <button class="theme-btn" id="themeToggle">
+        ☼
+      </button>
+
+    </div>
+
+    <button class="mobile-menu" id="mobileMenu">
+      ☰
+    </button>
+
+  </nav>
+
+</header>
+
+
+<main class="container page">
+
+  <section class="page-title">
+
+    <div class="eyebrow">
+      THE OPPORTUNITY BOARD
+    </div>
+
+    <h1>
+      Find something<br>
+      worth doing.
+    </h1>
+
+    <p>
+      Search internships, hackathons, competitions,
+      workshops, events and career fairs in one place.
+    </p>
+
+  </section>
+
+
+  <!-- SEARCH -->
+
+  <div class="search-row">
+
+    <form class="big-search" id="oppSearch">
+
+      <input
+        id="oppSearchInput"
+        type="search"
+        placeholder="Search “hackathons”, “design”, “Dubai”..."
+        autocomplete="off"
+      >
+
+      <button type="submit">
+        →
+      </button>
+
+    </form>
+
+    <button class="location-button" id="nearMe">
+      ◎ Near me
+    </button>
+
+  </div>
+
+
+  <!-- FILTERS -->
+
+  <div class="filter-bar">
+
+    <div class="chips" id="typeFilters">
+
+      <button class="chip active" data-type="All">
+        All
+      </button>
+
+      <button class="chip" data-type="Internship">
+        Internships
+      </button>
+
+      <button class="chip" data-type="Job">
+        Jobs
+      </button>
+
+      <button class="chip" data-type="Hackathon">
+        Hackathons
+      </button>
+
+      <button class="chip" data-type="Competition">
+        Competitions
+      </button>
+
+      <button class="chip" data-type="Event">
+        Events
+      </button>
+
+      <button class="chip" data-type="Workshop">
+        Workshops
+      </button>
+
+      <button class="chip" data-type="Career Fair">
+        Career Fairs
+      </button>
+
+    </div>
+
+
+    <div class="selects">
+
+      <select id="fieldFilter">
+
+        <option value="All">
+          Field
+        </option>
+
+        <option value="Design">
+          Design
+        </option>
+
+        <option value="Technology">
+          Technology
+        </option>
+
+        <option value="Business">
+          Business
+        </option>
+
+        <option value="Marketing">
+          Marketing
+        </option>
+
+        <option value="Research">
+          Research
+        </option>
+
+      </select>
+
+
+      <select id="locationFilter">
+
+        <option value="All">
+          Location
+        </option>
+
+        <option value="Dubai">
+          Dubai
+        </option>
+
+        <option value="Abu Dhabi">
+          Abu Dhabi
+        </option>
+
+        <option value="Sharjah">
+          Sharjah
+        </option>
+
+        <option value="Ras Al Khaimah">
+          Ras Al Khaimah
+        </option>
+
+        <option value="Online">
+          Online
+        </option>
+
+      </select>
+
+
+      <select id="sortFilter">
+
+        <option value="relevance">
+          Sort: Relevance
+        </option>
+
+        <option value="soon">
+          Soonest
+        </option>
+
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <div class="result-meta">
+
+    <span id="resultCount">
+      0 opportunities
+    </span>
+
+    <button class="text-link" id="clearFilters">
+      Clear filters
+    </button>
+
+  </div>
+
+
+  <div class="opportunity-list" id="opportunityList"></div>
+
+
+  <div class="empty-state" id="emptyState" hidden>
+
+    <div class="empty-symbol">?</div>
+
+    <h2>
+      Nothing here yet.
+    </h2>
+
+    <p>
+      Try a broader search or remove a filter.
+    </p>
+
+  </div>
+
+
+  <div class="live-note">
+
+    <span>✦</span>
+
+    <div>
+
+      <b>
+        Prototype note
+      </b>
+
+      <p>
+        NEXT currently uses a curated opportunity dataset.
+        Each listing connects directly to its external destination.
+        A future version could use APIs and a backend to continuously
+        collect and verify live opportunities.
+      </p>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer class="footer container">
+
+  <div>
+    <b>NEXT</b>
+    <span> Discover. Decide. Grow.</span>
+  </div>
+
+  <a href="problem.html">
+    Why NEXT exists →
+  </a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

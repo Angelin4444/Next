@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Career Explorer — NEXT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-page="career">
+
+<header class="nav-wrap">
+
+  <nav class="nav container">
+
+    <a class="brand" href="index.html">
+      <span class="brand-symbol">✦</span>
+      NEXT
+    </a>
+
+    <div class="nav-links" id="navLinks">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="opportunities.html">
+        Opportunities
+      </a>
+
+      <a class="active" href="career.html">
+        Career
+      </a>
+
+      <a href="problem.html">
+        Problem &amp; Solution
+      </a>
+
+    </div>
+
+    <div class="nav-actions">
+
+      <button class="theme-btn" id="themeToggle">
+        ☼
+      </button>
+
+    </div>
+
+    <button class="mobile-menu" id="mobileMenu">
+      ☰
+    </button>
+
+  </nav>
+
+</header>
+
+
+<main class="container page">
+
+  <section class="career-intro">
+
+    <div>
+
+      <div class="eyebrow">
+        CAREER EXPLORER
+      </div>
+
+      <h1>
+        Start with<br>
+        what you like.
+      </h1>
+
+      <p>
+        You don't need to know your exact job title yet.
+        Tell us what interests you and NEXT will show you
+        careers connected to those interests.
+      </p>
+
+    </div>
+
+    <div class="career-art">
+      <span>IDEA</span>
+      <i>→</i>
+      <span>SKILL</span>
+      <i>→</i>
+      <span>CAREER</span>
+    </div>
+
+  </section>
+
+
+  <!-- SEARCH CAREER -->
+
+  <section class="career-search-box">
+
+    <div class="eyebrow">
+      OR TYPE WHAT YOU LIKE
+    </div>
+
+    <div class="career-input-wrap">
+
+      <input
+        id="careerSearch"
+        type="text"
+        placeholder="Try “design marketing research”..."
+        autocomplete="off"
+      >
+
+      <button id="careerSearchButton">
+        Find paths →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTEREST CHIPS -->
+
+  <section class="career-selector">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="eyebrow">
+          PICK YOUR INTERESTS
+        </div>
+
+        <h2>
+          What sounds like you?
+        </h2>
+
+      </div>
+
+      <span class="selection-count" id="selectionCount">
+        0 selected
+      </span>
+
+    </div>
+
+
+    <div class="interest-grid" id="interestGrid">
+
+      <button data-interest="Design">
+        Design
+      </button>
+
+      <button data-interest="Technology">
+        Technology
+      </button>
+
+      <button data-interest="Marketing">
+        Marketing
+      </button>
+
+      <button data-interest="Business">
+        Business
+      </button>
+
+      <button data-interest="Research">
+        Research
+      </button>
+
+      <button data-interest="Creativity">
+        Creativity
+      </button>
+
+      <button data-interest="Communication">
+        Communication
+      </button>
+
+      <button data-interest="Problem Solving">
+        Problem Solving
+      </button>
+
+      <button data-interest="Media">
+        Media
+      </button>
+
+    </div>
+
+
+    <button class="button button-accent" id="showPaths">
+      Show my career paths →
+    </button>
+
+  </section>
+
+
+  <!-- RESULTS -->
+
+  <section class="section career-results" id="careerResults">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="eyebrow">
+          YOUR RESULTS
+        </div>
+
+        <h2>
+          Paths worth exploring.
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="career-grid" id="careerGrid"></div>
+
+  </section>
+
+</main>
+
+
+<!-- CAREER MODAL -->
+
+<div class="modal" id="careerModal">
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+
+  <div class="career-modal">
+
+    <button class="modal-close" id="modalClose">
+      ×
+    </button>
+
+    <div id="careerModalContent"></div>
+
+  </div>
+
+</div>
+
+
+<footer class="footer container">
+
+  <div>
+    <b>NEXT</b>
+    <span> Discover. Decide. Grow.</span>
+  </div>
+
+  <a href="problem.html">
+    Why NEXT exists →
+  </a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
